@@ -1,17 +1,17 @@
 
-## MicroServices
+# 古典的なマイクロサービスアーキテクチャ（SpringBoot 2.7.18 ベース）
 
-| 组件类型         | 组件名称         | 说明                                            | 依赖          | 部署方式          |
-|------------------|------------------|-------------------------------------------------|---------------|-------------------|
-| 注册配置中心         | Nacos            | 服务注册与发现中心                            | -             | Docker Compose    |
-| 网关微服务       | Gateway       | 处理请求路由和负载均衡                         | Nacos、Mysql、Redis             | Docker Compose    |
-| 鉴权微服务       | Auth       | 处理用户鉴权和认证                            | Nacos、Mysql、Redis             | Docker Compose    |
-| 系统微服务       | System       | 提供系统级别的服务和接口                      | Nacos、Mysql、Redis             | Docker Compose    |
-| 业务微服务       | Club       | 提供具体业务逻辑和服务                        | Nacos、MongoDB             | Docker Compose    |
-| 数据库           | MySQL             | 关系型数据库，用于存储结构化数据               | -             | Docker Compose    |
-| 数据库           | MongoDB           | 非关系型数据库，用于存储非结构化数据           | -             | Docker Compose    |
-| 数据库           | Redis             | 内存数据库，用于缓存和快速存取数据             | -             | Docker Compose    |
-| 文件存储             | MinIO             | 分布式文件存储系统                            | -             | Docker Compose    |
+| コンポーネントタイプ  | コンポーネント名 | 説明                                      | 依存関係                   | デプロイ方法        |
+|----------------------|------------------|-------------------------------------------|---------------------------|-------------------|
+| 登録・設定センター    | Nacos            | サービスの登録と発見のセンター            | -                         | Docker Compose    |
+| ゲートウェイマイクロサービス | Gateway         | リクエストのルーティングと負荷分散を処理   | Nacos、MySQL、Redis        | Docker Compose    |
+| 認証マイクロサービス  | Auth             | ユーザー認証と認可を処理                   | Nacos、MySQL、Redis        | Docker Compose    |
+| システムマイクロサービス | System          | システムレベルのサービスとインターフェースを提供 | Nacos、MySQL、Redis        | Docker Compose    |
+| ビジネスマイクロサービス | Club            | 特定のビジネスロジックとサービスを提供   | Nacos、MongoDB             | Docker Compose    |
+| データベース         | MySQL            | 構造化データを保存するリレーショナルデータベース | -                         | Docker Compose    |
+| データベース         | MongoDB          | 非構造化データを保存する非リレーショナルデータベース | -                         | Docker Compose    |
+| データベース         | Redis            | キャッシュおよび高速データアクセスのためのインメモリデータベース | -                         | Docker Compose    |
+| ファイルストレージ   | MinIO            | 分散ファイルストレージシステム              | -                         | Docker Compose    |
 
 ## `docker-compose.yml`
 
