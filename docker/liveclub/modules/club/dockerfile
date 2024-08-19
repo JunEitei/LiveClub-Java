@@ -1,0 +1,18 @@
+# 基础镜像
+FROM  openjdk:8-jre
+# author
+MAINTAINER damao
+
+# 延迟加载脚本
+ADD ./wait /wait
+RUN chmod +x /wait
+# 挂载目录
+VOLUME /home/liveclub
+# 创建目录
+RUN mkdir -p /home/liveclub
+# 指定路径
+WORKDIR /home/liveclub
+# 复制jar文件到路径
+COPY ./jar/liveclub-club.jar /home/liveclub/liveclub-club.jar
+# 运行
+CMD /wait && java -jar liveclub-club.jar

@@ -1,0 +1,2 @@
+com.kitamura.common.redis.configure.RedisConfig
+com.kitamura.common.redis.service.RedisService

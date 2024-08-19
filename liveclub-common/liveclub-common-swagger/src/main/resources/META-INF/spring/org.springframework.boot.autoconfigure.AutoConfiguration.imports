@@ -1,0 +1,3 @@
+# com.kitamura.common.swagger.config.SwaggerAutoConfiguration
+# com.kitamura.common.swagger.config.SwaggerWebConfiguration
+# com.kitamura.common.swagger.config.SwaggerBeanPostProcessor

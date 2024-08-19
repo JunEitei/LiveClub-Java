@@ -1,0 +1,2 @@
+com.kitamura.common.log.service.AsyncLogService
+com.kitamura.common.log.aspect.LogAspect

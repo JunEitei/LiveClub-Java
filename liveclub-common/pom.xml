@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>com.kitamura</groupId>
+        <artifactId>liveclub</artifactId>
+        <version>3.6.4</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <modules>
+        <module>liveclub-common-log</module>
+        <module>liveclub-common-core</module>
+        <module>liveclub-common-redis</module>
+        <module>liveclub-common-seata</module>
+        <module>liveclub-common-swagger</module>
+        <module>liveclub-common-security</module>
+        <module>liveclub-common-datascope</module>
+        <module>liveclub-common-datasource</module>
+    </modules>
+
+    <artifactId>liveclub-common</artifactId>
+    <packaging>pom</packaging>
+
+    <description>
+        liveclub-common通用模块
+    </description>
+
+</project>

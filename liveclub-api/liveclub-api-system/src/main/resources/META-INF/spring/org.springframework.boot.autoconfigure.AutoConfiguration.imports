@@ -1,0 +1,3 @@
+com.kitamura.system.api.factory.RemoteUserFallbackFactory
+com.kitamura.system.api.factory.RemoteLogFallbackFactory
+com.kitamura.system.api.factory.RemoteFileFallbackFactory

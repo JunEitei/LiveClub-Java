@@ -1,0 +1,8 @@
+docker/mysql/data
+docker/nacos/logs
+docker/minio/data
+docker/redis/data
+logs
+**/**/target
+liveclub-common/**/target
+docker/liveclub/**/jar
