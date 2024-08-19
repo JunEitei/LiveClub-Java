@@ -1,13 +1,13 @@
 
-## MicroService组件列表
+## MicroServices
 
 | 组件类型         | 组件名称         | 说明                                            | 依赖          | 部署方式          |
 |------------------|------------------|-------------------------------------------------|---------------|-------------------|
-| 注册中心         | Nacos            | 服务注册与发现中心                            | -             | Docker Compose    |
-| 网关微服务       | 网关微服务Gateway       | 处理请求路由和负载均衡                         | -             | Docker Compose    |
-| 鉴权微服务       | 鉴权微服务Auth       | 处理用户鉴权和认证                            | -             | Docker Compose    |
-| 系统微服务       | 系统微服务System       | 提供系统级别的服务和接口                      | -             | Docker Compose    |
-| 业务微服务       | 业务微服务Club       | 提供具体业务逻辑和服务                        | -             | Docker Compose    |
+| 注册配置中心         | Nacos            | 服务注册与发现中心                            | -             | Docker Compose    |
+| 网关微服务       | Gateway       | 处理请求路由和负载均衡                         | Nacos、Mysql、Redis             | Docker Compose    |
+| 鉴权微服务       | Auth       | 处理用户鉴权和认证                            | Nacos、Mysql、Redis             | Docker Compose    |
+| 系统微服务       | System       | 提供系统级别的服务和接口                      | Nacos、Mysql、Redis             | Docker Compose    |
+| 业务微服务       | Club       | 提供具体业务逻辑和服务                        | Nacos、MongoDB             | Docker Compose    |
 | 数据库           | MySQL             | 关系型数据库，用于存储结构化数据               | -             | Docker Compose    |
 | 数据库           | MongoDB           | 非关系型数据库，用于存储非结构化数据           | -             | Docker Compose    |
 | 数据库           | Redis             | 内存数据库，用于缓存和快速存取数据             | -             | Docker Compose    |
